@@ -1,4 +1,5 @@
 {
+  "homepage": "https://ththth6543.github.io/thein_reactApp",
   "name": "thein_reactApp",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b github_pages_deploy_test -d dist"
   },
   "dependencies": {
     "react": "^19.2.7",
